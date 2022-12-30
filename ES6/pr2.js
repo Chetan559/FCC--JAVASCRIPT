@@ -38,6 +38,8 @@ stringFunctions.uppercaseString("hello");
 stringFunctions.lowercaseString("WORLD!");
 
 //making javascript promise
+
+// const makeServerRequest = new Promise() => {
 const makeServerRequest = new Promise((resolve, reject) => {
   
   let responseFromServer;
