@@ -124,3 +124,21 @@ function frankenSplice(arr1, arr2, n) {
   }
   
   frankenSplice([1, 2, 3], [4, 5, 6], 1);
+  // ------------------------------------------------------------------------------------------------------------------------
+function bouncer(arr) {
+  const newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) newArr.push(arr[i]);
+  }
+  return newArr;
+}
+bouncer([7, "ate", "", false, 9]);
+// ------------------------------------------------------------------------------------------------------------------------
+function getIndexToIns(arr, num) {
+  arr.sort((a, b) => a - b);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] >= num) return i;
+  }
+  return arr.length;
+}
+getIndexToIns([40, 60], 50);
